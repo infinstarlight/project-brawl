@@ -9,10 +9,12 @@ public class ProjectBrawlServerTarget : TargetRules
     public ProjectBrawlServerTarget(TargetInfo Target) : base(Target)
     {
         Type = TargetType.Server;
-        //bUsesSteam = true;
-
+        DefaultBuildSettings = BuildSettingsVersion.V2;
         ExtraModuleNames.Add("ProjectBrawl");
     }
-
 }
+
+
+
+
 
