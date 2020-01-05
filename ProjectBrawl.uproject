@@ -1,20 +1,9 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{D51D837C-472F-763D-3715-23A50CBA28D0}",
+	"EngineAssociation": "{AECFDD6A-491A-8E64-83FF-E2AF1A6D5419}",
 	"Category": "",
 	"Description": "",
-	"Modules": [
-		{
-			"Name": "ProjectBrawl",
-			"Type": "Runtime",
-			"LoadingPhase": "Default"
-		}
-	],
 	"Plugins": [
-		{
-			"Name": "OnlineSubsystemSteam",
-			"Enabled": true
-		},
 		{
 			"Name": "Substance",
 			"Enabled": false,
@@ -27,6 +16,81 @@
 		{
 			"Name": "AdvancedSessions",
 			"Enabled": false
+		},
+		{
+			"Name": "OculusVR",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Win32",
+				"Win64",
+				"Android"
+			]
+		},
+		{
+			"Name": "SubversionSourceControl",
+			"Enabled": false
+		},
+		{
+			"Name": "PlasticSourceControl",
+			"Enabled": false
+		},
+		{
+			"Name": "CustomMeshComponent",
+			"Enabled": false
+		},
+		{
+			"Name": "EditableMesh",
+			"Enabled": false
+		},
+		{
+			"Name": "MediaCompositing",
+			"Enabled": false
+		},
+		{
+			"Name": "SteamVR",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Win32",
+				"Win64",
+				"Linux",
+				"Mac"
+			]
+		},
+		{
+			"Name": "ProceduralMeshComponent",
+			"Enabled": false
+		},
+		{
+			"Name": "DatasmithContent",
+			"Enabled": false
+		},
+		{
+			"Name": "AlembicImporter",
+			"Enabled": false
+		},
+		{
+			"Name": "SpeedTreeImporter",
+			"Enabled": false
+		},
+		{
+			"Name": "ArchVisCharacter",
+			"Enabled": false
+		},
+		{
+			"Name": "UObjectPlugin",
+			"Enabled": false
+		},
+		{
+			"Name": "MultiUserClient",
+			"Enabled": true
+		},
+		{
+			"Name": "Paper2D",
+			"Enabled": false
+		},
+		{
+			"Name": "WebSocketNetworking",
+			"Enabled": true
 		}
 	]
 }
