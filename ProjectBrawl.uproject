@@ -92,5 +92,16 @@
 			"Name": "WebSocketNetworking",
 			"Enabled": true
 		}
+	],
+	"TargetPlatforms": [
+		"Android",
+		"AllDesktop",
+		"HTML5",
+		"IOS",
+		"LinuxNoEditor",
+		"LinuxAArch64NoEditor",
+		"MacNoEditor",
+		"TVOS",
+		"WindowsNoEditor"
 	]
 }
