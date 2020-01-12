@@ -8,7 +8,7 @@ public class ProjectBrawlTarget : TargetRules
 	public ProjectBrawlTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
-
+		
 		ExtraModuleNames.AddRange( new string[] { "ProjectBrawl" } );
 	}
 }
