@@ -1,3 +1,4 @@
 Content/FPS/Assets/** filter=lfs diff=lfs merge=lfs -text
 *.umap filter=lfs diff=lfs merge=lfs -text
 Content/FPS/Env/** filter=lfs diff=lfs merge=lfs -text
+content/paragonmaleannouncer/** filter=lfs diff=lfs merge=lfs -text
