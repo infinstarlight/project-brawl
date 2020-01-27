@@ -1,0 +1,23 @@
+{
+	"FileVersion": 1,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Get All Map Names",
+	"Description": "Lets you get all names of your levels for your game. It puts out an array containing all names as strings. Ideally for using for a level selection menu. An example is provided. Make your player the player in the LevelSelect_Demo Folder and press N once you start playing.",
+	"Category": "Programming",
+	"CreatedBy": "Luis Schmitz",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "MapNames",
+			"Type": "Runtime",
+			"LoadingPhase": "PreLoadingScreen"
+		}
+	]
+}
