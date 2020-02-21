@@ -1,21 +1,22 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{AECFDD6A-491A-8E64-83FF-E2AF1A6D5419}",
+	"EngineAssociation": "{CA19E38E-4CF4-FD81-18B0-8F80B7964991}",
 	"Category": "",
 	"Description": "",
+	"Modules": [
+		{
+			"Name": "ProjectBrawl",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
 	"Plugins": [
 		{
-			"Name": "Substance",
-			"Enabled": false,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/2f6439c2f9584f49809d9b13b16c2ba4"
-		},
-		{
-			"Name": "AdvancedSteamSessions",
-			"Enabled": false
-		},
-		{
-			"Name": "AdvancedSessions",
-			"Enabled": false
+			"Name": "MapNames",
+			"Enabled": true
 		},
 		{
 			"Name": "OculusVR",
@@ -25,26 +26,6 @@
 				"Win64",
 				"Android"
 			]
-		},
-		{
-			"Name": "SubversionSourceControl",
-			"Enabled": false
-		},
-		{
-			"Name": "PlasticSourceControl",
-			"Enabled": false
-		},
-		{
-			"Name": "CustomMeshComponent",
-			"Enabled": false
-		},
-		{
-			"Name": "EditableMesh",
-			"Enabled": false
-		},
-		{
-			"Name": "MediaCompositing",
-			"Enabled": false
 		},
 		{
 			"Name": "SteamVR",
@@ -57,95 +38,35 @@
 			]
 		},
 		{
-			"Name": "ProceduralMeshComponent",
-			"Enabled": false
-		},
-		{
-			"Name": "DatasmithContent",
-			"Enabled": false
-		},
-		{
-			"Name": "AlembicImporter",
-			"Enabled": false
-		},
-		{
-			"Name": "SpeedTreeImporter",
-			"Enabled": false
-		},
-		{
-			"Name": "ArchVisCharacter",
-			"Enabled": false
-		},
-		{
-			"Name": "UObjectPlugin",
-			"Enabled": false
-		},
-		{
-			"Name": "MultiUserClient",
-			"Enabled": true
-		},
-		{
-			"Name": "Paper2D",
-			"Enabled": false
-		},
-		{
-			"Name": "WebSocketNetworking",
-			"Enabled": true
-		},
-		{
-			"Name": "MagicLeapMedia",
-			"Enabled": false,
-			"SupportedTargetPlatforms": [
-				"Lumin"
-			]
-		},
-		{
-			"Name": "MagicLeap",
-			"Enabled": false,
-			"SupportedTargetPlatforms": [
-				"Lumin",
-				"Mac",
-				"Win64"
-			]
-		},
-		{
-			"Name": "MLSDK",
-			"Enabled": false
-		},
-		{
-			"Name": "AutomationUtils",
-			"Enabled": false
-		},
-		{
 			"Name": "CableComponent",
 			"Enabled": false
 		},
 		{
-			"Name": "WmfMedia",
+			"Name": "CustomMeshComponent",
 			"Enabled": false
 		},
 		{
-			"Name": "MfMedia",
-			"Enabled": true
+			"Name": "EditableMesh",
+			"Enabled": false
 		},
 		{
 			"Name": "LightPropagationVolume",
 			"Enabled": false
 		},
 		{
-			"Name": "LocationServicesBPLibrary",
+			"Name": "MediaCompositing",
 			"Enabled": false
 		},
 		{
-			"Name": "FacialAnimation",
+			"Name": "ProceduralMeshComponent",
 			"Enabled": false
 		},
 		{
-			"Name": "AppleImageUtils",
-			"Enabled": false
+			"Name": "ReplicationGraph",
+			"Enabled": true
 		},
 		{
-			"Name": "OnlineSubsystemSteam",
+			"Name": "Ansel",
 			"Enabled": true
 		},
 		{
@@ -157,16 +78,106 @@
 			]
 		},
 		{
-			"Name": "MapNames",
+			"Name": "OnlineSubsystemGooglePlay",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Android"
+			]
+		},
+		{
+			"Name": "WebSocketNetworking",
 			"Enabled": true
+		},
+		{
+			"Name": "MagicLeap",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Lumin",
+				"Mac",
+				"Win64"
+			]
+		},
+		{
+			"Name": "MagicLeapMedia",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Lumin"
+			]
+		},
+		{
+			"Name": "MLSDK",
+			"Enabled": false
+		},
+		{
+			"Name": "AlembicImporter",
+			"Enabled": false
+		},
+		{
+			"Name": "DatasmithContent",
+			"Enabled": false
+		},
+		{
+			"Name": "GeometryCache",
+			"Enabled": false
+		},
+		{
+			"Name": "SpeedTreeImporter",
+			"Enabled": false
+		},
+		{
+			"Name": "ArchVisCharacter",
+			"Enabled": false
+		},
+		{
+			"Name": "MultiUserClient",
+			"Enabled": true
+		},
+		{
+			"Name": "Paper2D",
+			"Enabled": false
+		},
+		{
+			"Name": "PerforceSourceControl",
+			"Enabled": false
+		},
+		{
+			"Name": "PlasticSourceControl",
+			"Enabled": false
+		},
+		{
+			"Name": "SubversionSourceControl",
+			"Enabled": false
+		},
+		{
+			"Name": "WebMMoviePlayer",
+			"Enabled": false
+		},
+		{
+			"Name": "AppleImageUtils",
+			"Enabled": false
+		},
+		{
+			"Name": "UObjectPlugin",
+			"Enabled": false
+		},
+		{
+			"Name": "MatineeToLevelSequence",
+			"Enabled": false
+		},
+		{
+			"Name": "ProxyLODPlugin",
+			"Enabled": false
+		},
+		{
+			"Name": "LocationServicesBPLibrary",
+			"Enabled": false
 		}
 	],
 	"TargetPlatforms": [
 		"Android",
-		"AllDesktop",
+		"XXX",
 		"HTML5",
 		"IOS",
-		"LinuxNoEditor",
 		"LinuxAArch64NoEditor",
 		"MacNoEditor",
 		"TVOS",
