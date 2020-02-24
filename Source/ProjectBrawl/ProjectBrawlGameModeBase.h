@@ -4,29 +4,16 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
-#include "Characters/BrawlPlayerController.h"
-#include "Characters/BrawlPlayerState.h"
-#include "Characters/BrawlCharacter.h"
+#include "Players/BrawlPlayerController.h"
+#include "Players/BrawlPlayerState.h"
+#include "Players/BrawlCharacter.h"
 #include "System/BrawlGameState.h"
 #include "ProjectBrawlGameModeBase.generated.h"
 
 /**
  * 
  */
-UENUM(BlueprintType)
-enum class EGameType : uint8
-{
-	None,
-	Menus,
-	Lobby,
-	Deathmatch,
-	TeamDeathmatch,
-	CTF,
-	Rush,
-	LMS,
-	Conquest
 
-};
 UCLASS()
 class PROJECTBRAWL_API AProjectBrawlGameModeBase : public AGameModeBase
 {
@@ -54,8 +41,8 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Game Rules")
 		bool bEnableBots = false;
 
-	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category = "Game Type")
-		TEnumAsByte<EGameType> CurrentGameType;
+	/*UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category = "Game Type")
+		TEnumAsByte<EGameType> CurrentGameType;*/
 
 	UPROPERTY(Replicated, VisibleAnywhere, BlueprintReadOnly, Category = "Game Score")
 		int32 TeamAScore = 0;
