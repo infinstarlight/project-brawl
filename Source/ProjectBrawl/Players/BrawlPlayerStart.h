@@ -21,6 +21,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Status")
 		bool bIsActive = false;
 
+	//Can this spawn point be used?
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Status")
+		bool bCanBeUsed = false;
+
 	//What team does this spawn work for?
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Status")
 		TEnumAsByte<EPlayerTeam> SpawnPlayerTeam; 

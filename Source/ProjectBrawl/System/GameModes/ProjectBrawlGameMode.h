@@ -63,7 +63,22 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Team B")
 		TArray<ABrawlPlayerStart*> PossibleSpawnsTeamB;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Team A")
+		TArray<ABrawlPlayerStart*> ActiveSpawnsTeamA;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Team B")
+		TArray<ABrawlPlayerStart*> ActiveSpawnsTeamB;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Team A")
+		TArray<AController*> BotControllersTeamA;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Team B")
+		TArray<AController*> BotControllersTeamB;
+
 public:
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Game Rules")
+		bool bIsGameOver = false;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Game Rules")
 		bool bEnableFriendlyFire = false;
@@ -74,10 +89,10 @@ public:
 	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category = "Game Type")
 		TEnumAsByte<EGameType> CurrentGameType;
 
-	UPROPERTY(Replicated, VisibleAnywhere, BlueprintReadOnly, Category = "Game Score")
+	UPROPERTY(Replicated, VisibleAnywhere, BlueprintReadWrite, Category = "Game Score")
 		int32 TeamAScore = 0;
 
-	UPROPERTY(Replicated, VisibleAnywhere, BlueprintReadOnly, Category = "Game Score")
+	UPROPERTY(Replicated, VisibleAnywhere, BlueprintReadWrite, Category = "Game Score")
 		int32 TeamBScore = 0;
 
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
