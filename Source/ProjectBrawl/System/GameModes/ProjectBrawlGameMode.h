@@ -57,22 +57,22 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Game Status")
 		TArray<class APlayerController*> CurrentPlayerControllers;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Team A")
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Team A")
 		TArray<ABrawlPlayerStart*> PossibleSpawnsTeamA;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Team B")
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Team B")
 		TArray<ABrawlPlayerStart*> PossibleSpawnsTeamB;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Team A")
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Team A")
 		TArray<ABrawlPlayerStart*> ActiveSpawnsTeamA;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Team B")
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Team B")
 		TArray<ABrawlPlayerStart*> ActiveSpawnsTeamB;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Team A")
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Team A")
 		TArray<AController*> BotControllersTeamA;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Team B")
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Team B")
 		TArray<AController*> BotControllersTeamB;
 
 public:

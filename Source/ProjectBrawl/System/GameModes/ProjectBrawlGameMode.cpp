@@ -16,6 +16,21 @@ void AProjectBrawlGameMode::PostLogin(APlayerController* NewPlayer)
 
 void AProjectBrawlGameMode::PlayerDied(ABrawlCharacter* KilledPlayer, ABrawlCharacter* Killer)
 {
+	if (CurrentGameType == EGameType::LMS)
+	{
+		if (KilledPlayer)
+		{
+			if (ABrawlPlayerController* PC = Cast<ABrawlPlayerController>(KilledPlayer->GetController()))
+			{
+				AlivePlayers.RemoveSingle(PC);
+			}
+
+			if (AlivePlayers.Num() == 1 && AlivePlayers.IsValidIndex(0))
+			{
+				WinnerFound(Cast<ABrawlPlayerState>(AlivePlayers[0]->PlayerState));
+			}
+		}
+	}
 }
 
 void AProjectBrawlGameMode::WinnerFound(ABrawlPlayerState* Winner)

@@ -9,6 +9,6 @@ public class ProjectBrawlTarget : TargetRules
 	{
 		Type = TargetType.Game;
 
-		ExtraModuleNames.AddRange( new string[] { "ProjectBrawl", "AIModule", "GameplayStatics" } );
+		ExtraModuleNames.AddRange( new string[] { "ProjectBrawl", "AIModule", "GameplayTasks" } );
 	}
 }
