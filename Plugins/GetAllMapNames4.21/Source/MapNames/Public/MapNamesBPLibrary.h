@@ -217,4 +217,30 @@ class UMapNamesBPLibrary : public UBlueprintFunctionLibrary
 
 		return CTFMapFiles;
 	}
+
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Get Last Man Standing Map Names", Keywords = "Get LMS Maps"), Category = "Game Data")
+		static FORCEINLINE TArray<FString> GetLMSMapNames_p()
+	{
+		TArray<FString> LMSMapFiles;
+
+		IFileManager::Get().FindFilesRecursive(LMSMapFiles, *FPaths::ProjectContentDir(), TEXT("LMS_*.umap"), true, false, false);
+
+		for (int32 i = 0; i < LMSMapFiles.Num(); i++)
+		{
+			int32 lastSlashIndex = -1;
+			if (LMSMapFiles[i].FindLastChar('/', lastSlashIndex))
+			{
+				FString pureStoryMapName;
+
+				for (int32 j = lastSlashIndex + 1; j < LMSMapFiles[i].Len() - 5; j++)
+				{
+					pureStoryMapName.AppendChar(LMSMapFiles[i][j]);
+				}
+
+				LMSMapFiles[i] = pureStoryMapName;
+			}
+		}
+
+		return LMSMapFiles;
+	}
 };
