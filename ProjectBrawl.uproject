@@ -178,9 +178,9 @@
 		"XXX",
 		"HTML5",
 		"IOS",
-		"LinuxAArch64NoEditor",
 		"MacNoEditor",
 		"TVOS",
-		"WindowsNoEditor"
+		"WindowsNoEditor",
+		"LinuxNoEditor"
 	]
 }
