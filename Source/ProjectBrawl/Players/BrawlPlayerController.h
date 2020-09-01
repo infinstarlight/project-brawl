@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
+#include "GenericTeamAgentInterface.h"
 #include "Net/UnrealNetwork.h"
 #include "BrawlPlayerController.generated.h"
 
@@ -19,11 +20,13 @@ enum class EPlayerTeam : uint8
 	BravoTeam
 };
 UCLASS()
-class PROJECTBRAWL_API ABrawlPlayerController : public APlayerController
+class PROJECTBRAWL_API ABrawlPlayerController : public APlayerController, public IGenericTeamAgentInterface
 {
 	GENERATED_BODY()
 
 public:
+
+	ABrawlPlayerController();
 
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
@@ -40,13 +43,19 @@ public:
 		FText MessageSender;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Status")
-		FText KillerName;
+		FText KillerName_CPP;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Status")
 		FText KilledPlayerName;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Status")
 		bool bIsPlayerActive = false;
+
+	// Implement The Generic Team Interface 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Perception")
+	FGenericTeamId TeamId;
+
+	FGenericTeamId GetGenericTeamId() const;
 
 	
 };
