@@ -13,6 +13,7 @@
 	"EngineVersion": "4.24.0",
 	"CanContainContent": true,
 	"Installed": true,
+	"EnabledByDefault" : true,
 	"Modules": [
 		{
 			"Name": "UINavigation",
@@ -25,7 +26,8 @@
 				"PS4",
 				"XboxOne",
 				"Switch",
-				"Android"
+        		"Android",
+        		"HTML5"
 			],
 			"BlacklistPlatforms": [
 				"IOS"

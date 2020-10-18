@@ -15,12 +15,12 @@ class AchievementEvents final {
 public:
     static void OnUserAchievementUpdate(void* callbackData, DiscordUserAchievement* userAchievement)
     {
-        auto* core = reinterpret_cast<Core*>(callbackData);
-        if (!core) {
+        auto* tcore = reinterpret_cast<Core*>(callbackData);
+        if (!tcore) {
             return;
         }
 
-        auto& module = core->AchievementManager();
+        auto& module = tcore->AchievementManager();
         module.OnUserAchievementUpdate(*reinterpret_cast<UserAchievement const*>(userAchievement));
     }
 };
