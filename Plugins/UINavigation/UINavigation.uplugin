@@ -18,7 +18,7 @@
 		{
 			"Name": "UINavigation",
 			"Type": "Runtime",
-			"LoadingPhase": "PreDefault",
+			"LoadingPhase": "Default",
 			"WhitelistPlatforms": [
 				"Win64",
 				"Linux",
