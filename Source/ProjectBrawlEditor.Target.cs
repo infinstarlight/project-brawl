@@ -1,14 +1,14 @@
-// Copyright 2020 Property of Digiplay Gaming
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 
 using UnrealBuildTool;
 using System.Collections.Generic;
 
 public class ProjectBrawlEditorTarget : TargetRules
 {
-	public ProjectBrawlEditorTarget(TargetInfo Target) : base(Target)
+	public ProjectBrawlEditorTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
-
-		ExtraModuleNames.AddRange( new string[] { "ProjectBrawl" } );
+        DefaultBuildSettings = BuildSettingsVersion.V2;
+        ExtraModuleNames.AddRange( new string[] { "ProjectBrawl" } );
 	}
 }
