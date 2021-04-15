@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{6CF2D11D-46FC-80B4-11B1-16B61063B5F3}",
+	"EngineAssociation": "{B69CB0B0-426C-7A15-FD54-FAAA1D89E553}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -178,10 +178,6 @@
 			"Name": "UINavigation",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/4601ff4d12fc4ed1a7418e1585374a48"
-		},
-		{
-			"Name": "EditorDiscordRichPresence",
-			"Enabled": true
 		},
 		{
 			"Name": "WebBrowserNativeProxy",
